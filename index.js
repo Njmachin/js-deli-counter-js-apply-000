@@ -1,6 +1,14 @@
+let number = 0;
+
 function takeANumber(line, personName) {
   line.push(personName)
-  return `Welcome, ${personName}. You are number ${line.length} in line.`
+  
+  return `Welcome, ${personName}. You are number ${deliCounter(number)} in line.`
+}
+
+function deliCounter(num) {
+  num ++;
+  return num;
 }
 
 function nowServing (line) {
